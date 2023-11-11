@@ -7,12 +7,7 @@ app.use(express.json());
 //Método get//
 
 //Route Params São Obrigatórios//
-app.post("/users",(request, response) => {
-    const { name, email, password } = request.body;
 
-    response.json({name, email, password});
-}); 
-    
 
 
 const PORT = 3333; //endereço da porta//
