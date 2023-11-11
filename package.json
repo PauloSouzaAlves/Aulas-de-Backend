@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "n",
   "version": "1.0.0",
   "description": "api desenvolvida na rocketseat",
   "main": "index.js",
@@ -14,5 +14,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
   }
 }

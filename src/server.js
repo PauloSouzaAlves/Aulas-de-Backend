@@ -1,17 +1,11 @@
-const express = require('express'); //importo express q é node //
+const express = require('express')
+const routes = require("./routes")
 
-const app = express(); 
+const app = express()
+app.use(express.json())
 
-app.use(express.json());
+app.use(routes)
 
-//Método get//
+const PORT = 3333
 
-//Route Params São Obrigatórios//
-
-
-
-const PORT = 3333; //endereço da porta//
-
-app.listen(PORT,() => console.log(`Server is running on Port ${PORT}`));//AQUI é onde nossa aplicacao fica escutando para quanfo escutar ela produz mensagem console.log// 
-
-
+app.listen(PORT,() => console.log(`Server is running on Port ${PORT}`))
